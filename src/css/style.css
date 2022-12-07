@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+body {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.header {
+    grid-area: header;
+    padding: 3% 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    align-items: center;
+}
+
+.header li a {
+    color: var(--dark-grayish-violet);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.header li a:hover {
+    color: var(--very-dark-violet);
+}
+
+.header  ul li:last-child a {
+    border: 3px solid var(--very-dark-violet);
+    padding: 0.6rem 1.5rem;
+    color: var(--very-dark-violet);
+}
+
+.header  ul li:last-child a:hover {
+    background-color: var(--very-dark-violet);
+    color: var(--very-light-gray);
+}
+
+.main {
+    grid-area: main;
+    margin-bottom: 8.1rem;
+}
+
+.intro {
+    display: flex;
+    padding: 7%;
+    gap: 1.25rem;
+    background-color: var(--dark-violet);
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg), url(../images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -0.5% 250%, right top;
+}
+
+.intro div hr {
+    width: 20%;
+    margin-bottom: 3.1rem;
+}
+
+.intro h1 {
+    color: var(--very-light-gray);
+    font: 400 4rem 'DM Serif Display', sans-serif;
+    margin-bottom: 1.25rem;
+}
+
+.intro p {
+    color: var(--very-light-gray);
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 3.1rem;
+}
+
+.intro a {
+    padding: 0.6rem 1.8rem;
+    border: 3px solid var(--very-light-gray);
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    color: var(--very-light-gray);
+    transition: 0.3s;
+}
+
+.intro a:hover {
+    color: var(--very-dark-violet);
+    background-color: var(--very-light-gray);
+    font-weight: 700;
+}
+
+.intro-img {
+    position: relative;
+    width: 100%;
+    height: 31.25rem;
+}
+
+.intro-img img {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.benefits {
+    padding: 17% 7% 7% 7%;
+    background: url(../images/bg-pattern-intro-left-desktop.svg) no-repeat left -75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits hr {
+    width: 11%;
+    margin-bottom: 3.1rem;
+}
+
+.benefits h2 {
+    font: 400 4rem 'DM Serif Display', sans-serif;
+    margin-bottom: 5rem;
+}
+
+.benefits article {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+
+.benefits div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.benefits h3 {
+    font: 400 1.5rem 'DM Serif Display', sans-serif;
+}
+
+.benefits p {
+    font-family: 'Karla', sans-serif;
+    color: var(--dark-grayish-violet);
+}
+
+.call-to-action {
+    padding: 5% 7%;
+}
+
+.call-to-action div {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark-violet) url(../images/bg-pattern-how-we-work-desktop.svg) right no-repeat;
+    background-size: contain;
+}
+
+.call-to-action h1 {
+    font: 400 3.5em 'DM Serif Display', sans-serif;
+    color: var(--very-light-gray);
+}
+
+.call-to-action a {
+    padding: 0.6rem 1.8rem;
+    border: 3px solid var(--very-light-gray);
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    color: var(--very-light-gray);
+    transition: 0.3s;
+}
+
+.call-to-action a:hover {
+    color: var(--very-dark-violet);
+    background-color: var(--very-light-gray);
+    font-weight: 700;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 5% 7%;
+    background: var(--very-light-gray) url(../images/bg-pattern-footer-desktop.svg) no-repeat;
+}
+
+.social-medias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.social-medias ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.social-medias a {
+    font-size: 1.6rem;
+    color: var(--dark-grayish-violet);
+    transition: 0.3s;
+}
+
+.social-medias a:hover {
+    color: var(--very-dark-violet);
+}
+
+.footer hr {
+    margin-bottom: 2.5rem;
+}
+
+.informations {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+}
+
+.informations div {
+    display: flex;
+    flex-direction: column;
+}
+
+.informations span {
+    color: var(--dark-grayish-violet);
+    margin-bottom: 1.25rem;
+}
+
+.informations ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.informations a {
+    color: var(--dark-violet);
+    font-weight: 700;
+}
+
+.informations a:hover {
+    text-decoration: underline;
+}
+
+
+input {
+    display: none;
+}
